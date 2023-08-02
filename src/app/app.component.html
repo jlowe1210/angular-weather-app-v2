@@ -1,0 +1,8 @@
+<div [ngStyle]="{ height: '500px', margin: 0 }" id="map" #map></div>
+<weather-search></weather-search>
+<p *ngIf="loading">Loading...</p>
+<p *ngIf="errorMessage.length !== 0">{{ errorMessage }}</p>
+<weather-card
+  [weatherData]="weatherData"
+  *ngIf="weatherData && !loading"
+></weather-card>

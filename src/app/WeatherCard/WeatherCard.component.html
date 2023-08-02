@@ -1,0 +1,15 @@
+<div class="weather_container">
+  <p>{{ formattDate() }}</p>
+  <h1>{{ weatherData.name }}</h1>
+  <p [style.fontWeight]="'bold'">
+    {{ getFahAndCel().cel }}&#8451; / {{ getFahAndCel().fah }} &#8457;
+  </p>
+  <p>{{ weatherData.weather_description }}</p>
+  <p>
+    <img
+      src="https://openweathermap.org/img/wn/{{
+        weatherData.weather_icon
+      }}@2x.png"
+    />
+  </p>
+</div>
