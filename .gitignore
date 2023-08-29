@@ -7,7 +7,7 @@
 /bazel-out
 
 #KEYS
-/src/KEYS.ts
+
 
 # Node
 /node_modules
